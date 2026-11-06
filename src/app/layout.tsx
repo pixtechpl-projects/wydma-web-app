@@ -80,8 +80,21 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/branding/wydma-icon.jpg",
-    apple: "/branding/wydma-icon.jpg",
+    icon: [
+      {
+        url: "/branding/icon-bg-round.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/branding/icon-bg-round.png",
+    apple: [
+      {
+        url: "/branding/icon-bg-noround.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
   },
 };
 

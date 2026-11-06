@@ -250,7 +250,7 @@ export function organizationJsonLd() {
     legalName,
     url: siteUrl,
     image: `${siteUrl}/projects/biuletyny-jubileuszowe.png`,
-    logo: `${siteUrl}/branding/wydma-icon.jpg`,
+    logo: `${siteUrl}/branding/icon-bg-noround.png`,
     description:
       "Agencja wydawniczo-marketingowa z Gdańska. Od 2012 roku tworzy gazety, biuletyny, foldery i materiały reklamowe, od treści po przygotowanie do druku.",
     foundingDate: "2012",

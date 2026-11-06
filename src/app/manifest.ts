@@ -13,9 +13,9 @@ export default function manifest(): MetadataRoute.Manifest {
     lang: "pl",
     icons: [
       {
-        src: "/branding/wydma-icon.jpg",
-        sizes: "1716x651",
-        type: "image/jpeg",
+        src: "/branding/icon-bg-noround.png",
+        sizes: "512x512",
+        type: "image/png",
       },
     ],
   };
