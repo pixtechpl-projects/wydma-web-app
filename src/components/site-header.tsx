@@ -59,7 +59,7 @@ export function SiteHeader() {
                 aria-current={current ? "page" : undefined}
                 className={`px-4 py-2 text-sm font-semibold text-ink underline-offset-8 ${
                   current
-                    ? "underline decoration-sun decoration-2"
+                    ? "underline decoration-ink decoration-2"
                     : "hover:underline hover:decoration-ink/25"
                 }`}
               >
