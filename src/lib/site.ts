@@ -6,8 +6,7 @@ export const siteUrl = (
 
 export const siteName = "Wydma";
 
-export const legalName =
-  "Agencja Wydawniczo-Marketingowa „Wydma” Grzegorz Burdyński";
+export const legalName = "Agencja Wydawniczo-Marketingowa „Wydma”";
 
 export const tagline =
   "Dobre treści. Przemyślana forma. Skuteczna komunikacja.";
@@ -15,8 +14,8 @@ export const tagline =
 export const motto = "Wydmy uczą nas zmiany, pustynia - wytrwałości...";
 
 export const contactDetails = {
-  phone: "+48 123 456 789",
-  email: "biuro@agencjawydma.pl",
+  phone: "+48 530 283 846",
+  email: "agencjawydma@gmail.com",
   street: "ul. Nieborowska 47 lok. 9",
   postalCode: "80-034",
   city: "Gdańsk",
@@ -56,8 +55,7 @@ export const services = [
     id: "publikacje-drukowane",
     title: "Publikacje drukowane",
     eyebrow: "Gazety, biuletyny, foldery",
-    summary:
-      "Gazety, biuletyny, foldery i wydawnictwa okolicznościowe.",
+    summary: "Gazety, biuletyny, foldery i wydawnictwa okolicznościowe.",
     paragraphs: [
       "Tworzymy gazety, biuletyny, foldery i inne publikacje drukowane, które pomagają prezentować działalność, przekazywać informacje i budować relacje z odbiorcami.",
       "Zapewniamy kompleksową obsługę procesu wydawniczego: od opracowania koncepcji i przygotowania treści, przez redakcję i projekt graficzny, po przygotowanie publikacji do druku i organizację jej wydania.",
@@ -69,8 +67,7 @@ export const services = [
     id: "materialy-reklamowe",
     title: "Materiały reklamowe",
     eyebrow: "Plakaty, ulotki, banery, wizytówki",
-    summary:
-      "Plakaty, ulotki, banery, roll-upy, standy i wizytówki.",
+    summary: "Plakaty, ulotki, banery, roll-upy, standy i wizytówki.",
     paragraphs: [
       "Projektujemy materiały reklamowe i promocyjne, które pomagają wyróżnić firmę, zaprezentować ofertę i przekazać najważniejsze informacje.",
       "Przygotowujemy projekty plakatów, ulotek, banerów, roll-upów, standów, wizytówek oraz innych materiałów wykorzystywanych w promocji, podczas wydarzeń i w punktach obsługi klienta.",
@@ -189,8 +186,7 @@ export const projectGroups = [
         width: 1672,
         height: 941,
         alt: "Baner nad witryną Piekarni Pellowski z napisem Rok Założenia 1922, w hali targowej.",
-        caption:
-          "Baner witryny Piekarni Pellowski, rok założenia 1922.",
+        caption: "Baner witryny Piekarni Pellowski, rok założenia 1922.",
       },
       {
         src: "/projects/brelok-lotnik.jpg",

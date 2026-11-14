@@ -2,9 +2,7 @@
 
 import { contactSchema } from "@/lib/contact-schema";
 
-export type ContactActionState =
-  | { ok: true }
-  | { ok: false; message: string };
+export type ContactActionState = { ok: true } | { ok: false; message: string };
 
 export async function submitContact(
   input: unknown,

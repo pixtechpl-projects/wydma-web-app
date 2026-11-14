@@ -6,29 +6,31 @@ import { contactDetails, legalName, navItems } from "@/lib/site";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-auto border-t-2 border-ink bg-ink text-paper">
+    <footer className="mt-auto border-t border-ink/10 bg-background text-ink">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <Image
-            src="/branding/wydma-icon-nbg-white.png"
-            alt="Wydma"
-            width={811}
-            height={307}
-            className="h-12 w-auto"
-          />
-          <p className="mt-3 max-w-sm text-sm leading-6 text-paper/80">
-            Agencja wydawniczo-marketingowa w Gdańsku. Dobre treści, przemyślana
-            forma i skuteczna komunikacja od 2012 roku.
-          </p>
+          <Link
+            href="/"
+            aria-label="Wydma, strona główna"
+            className="inline-flex"
+          >
+            <Image
+              src="/branding/wydma-logo.png"
+              alt=""
+              width={3713}
+              height={939}
+              className="h-11 w-auto"
+            />
+          </Link>
         </div>
         <nav aria-label="Stopka">
-          <p className="text-xs font-semibold tracking-[0.16em] text-sun uppercase">
+          <p className="text-xs font-semibold tracking-[0.16em] text-ink/50 uppercase">
             Na stronie
           </p>
           <ul className="mt-4 space-y-2 text-sm">
             {navItems.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="hover:text-sun">
+                <Link href={item.href} className="hover:underline">
                   {item.label}
                 </Link>
               </li>
@@ -36,7 +38,7 @@ export function SiteFooter() {
           </ul>
         </nav>
         <address className="text-sm leading-6 not-italic">
-          <p className="text-xs font-semibold tracking-[0.16em] text-sun uppercase">
+          <p className="text-xs font-semibold tracking-[0.16em] text-ink/50 uppercase">
             Kontakt
           </p>
           <p className="mt-4">{legalName}</p>
@@ -48,7 +50,7 @@ export function SiteFooter() {
             <p className="mt-3">
               <a
                 href={`tel:${contactDetails.phone}`}
-                className="hover:text-sun"
+                className="hover:underline"
               >
                 {contactDetails.phone}
               </a>
@@ -58,21 +60,21 @@ export function SiteFooter() {
             <p>
               <a
                 href={`mailto:${contactDetails.email}`}
-                className="hover:text-sun"
+                className="hover:underline"
               >
                 {contactDetails.email}
               </a>
             </p>
           ) : null}
-          <p className="mt-3 text-paper/70">
+          <p className="mt-3 text-ink/60">
             NIP {contactDetails.nip}
             <br />
             REGON {contactDetails.regon}
           </p>
         </address>
       </div>
-      <Separator className="bg-paper/15" />
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-paper/60 sm:flex-row sm:justify-between text-center">
+      <Separator className="bg-ink/10" />
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-5 py-5 text-center text-xs text-ink/60 sm:flex-row sm:justify-between">
         <p>
           Wszelkie prawa zastrzeżone &copy; {new Date().getFullYear()} Agencja
           Wydawniczo-Marketingowa „Wydma”
@@ -82,7 +84,7 @@ export function SiteFooter() {
           href="https://pixtech.pl"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 text-white/80 transition hover:text-white mx-auto sm:mx-0"
+          className="mx-auto inline-flex items-center gap-2 text-ink/70 transition hover:text-ink sm:mx-0"
         >
           <span className="font-medium">created by</span>
           <Image
@@ -91,7 +93,7 @@ export function SiteFooter() {
             width={20}
             height={11}
             unoptimized
-            className="h-auto w-5"
+            className="h-auto w-5 invert"
           />
         </a>
       </div>

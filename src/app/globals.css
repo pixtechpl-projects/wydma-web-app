@@ -10,6 +10,8 @@
   --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, monospace;
   --font-heading: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-script: var(--font-caveat), "Segoe Script", cursive;
+  --color-lagoon-soft: #d7f1ea;
   --color-ink: var(--ink);
   --color-coral: var(--coral);
   --color-sun: var(--sun);
@@ -109,9 +111,11 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image:
-      radial-gradient(760px 440px at -10% 8%, rgb(18 181 168 / 0.22), transparent 58%),
-      radial-gradient(680px 380px at 70% 110%, rgb(240 74 36 / 0.12), transparent 52%);
+    background-image: radial-gradient(
+      920px 560px at 100% -4%,
+      rgb(18 181 168 / 0.5),
+      transparent 62%
+    );
     background-attachment: fixed;
   }
   h1,

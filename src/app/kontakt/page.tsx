@@ -48,8 +48,8 @@ export default function ContactPage() {
             szukasz partnera do przygotowania biuletynu? Napisz do nas. Chętnie
             poznamy Twoje potrzeby i porozmawiamy o możliwościach współpracy.
           </p>
-          <address className="mt-8 rounded-[1.8rem] border-2 border-ink bg-white p-6 not-italic shadow-[6px_6px_0_0_var(--lagoon)]">
-            <p className="text-xs font-semibold tracking-[0.16em] text-lagoon-deep uppercase">
+          <address className="mt-8 rounded-[1.8rem] border border-ink/10 bg-white p-6 not-italic">
+            <p className="text-xs font-semibold tracking-[0.16em] text-ink/50 uppercase">
               Skontaktuj się z nami
             </p>
             <p className="mt-4 font-semibold text-ink">{legalName}</p>
@@ -60,7 +60,10 @@ export default function ContactPage() {
             </p>
             {contactDetails.phone ? (
               <p className="mt-4">
-                <a className="font-semibold text-lagoon-deep" href={`tel:${contactDetails.phone}`}>
+                <a
+                  className="font-semibold text-ink hover:underline"
+                  href={`tel:${contactDetails.phone}`}
+                >
                   {contactDetails.phone}
                 </a>
               </p>
@@ -68,7 +71,7 @@ export default function ContactPage() {
             {contactDetails.email ? (
               <p className="mt-1">
                 <a
-                  className="font-semibold text-lagoon-deep"
+                  className="font-semibold text-ink hover:underline"
                   href={`mailto:${contactDetails.email}`}
                 >
                   {contactDetails.email}
@@ -78,7 +81,9 @@ export default function ContactPage() {
           </address>
         </header>
         <div>
-          <h2 className="mb-4 text-3xl font-semibold text-ink">Napisz do nas</h2>
+          <h2 className="mb-4 text-3xl font-semibold text-ink">
+            Napisz do nas
+          </h2>
           <p className="mb-6 leading-7 text-ink/75">
             Opowiedz krótko, czego potrzebujesz. Wrócimy do Ciebie, aby omówić
             szczegóły.

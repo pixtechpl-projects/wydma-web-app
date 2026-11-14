@@ -34,7 +34,11 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-paper/85 backdrop-blur-md">
       <div className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between gap-4 px-5">
-        <Link href="/" className="flex items-center" aria-label="Wydma, strona główna">
+        <Link
+          href="/"
+          className="flex items-center"
+          aria-label="Wydma, strona główna"
+        >
           <Image
             src="/branding/wydma-logo.png"
             alt=""
@@ -53,8 +57,10 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 aria-current={current ? "page" : undefined}
-                className={`rounded-full px-4 py-2 text-sm font-semibold ${
-                  current ? "bg-sun text-ink" : "text-ink hover:bg-blush"
+                className={`px-4 py-2 text-sm font-semibold text-ink underline-offset-8 ${
+                  current
+                    ? "underline decoration-sun decoration-2"
+                    : "hover:underline hover:decoration-ink/25"
                 }`}
               >
                 {item.label}
@@ -64,12 +70,23 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <LinkButton href="/kontakt" size="sm" className="hidden sm:inline-flex">
+          <LinkButton
+            href="/kontakt"
+            size="sm"
+            variant="ink"
+            className="hidden sm:inline-flex"
+          >
             Porozmawiajmy
           </LinkButton>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger
-              render={<Button variant="outline" size="icon-sm" className="lg:hidden" />}
+              render={
+                <Button
+                  variant="outline"
+                  size="icon-sm"
+                  className="lg:hidden"
+                />
+              }
               aria-label="Otwórz menu"
             >
               <Menu />
@@ -90,8 +107,10 @@ export function SiteHeader() {
                         event.preventDefault();
                         go(item.href);
                       }}
-                      className={`rounded-2xl px-4 py-3 text-lg font-semibold ${
-                        current ? "bg-sun text-ink" : "hover:bg-blush"
+                      className={`rounded-2xl px-4 py-3 text-lg font-semibold underline-offset-8 ${
+                        current
+                          ? "underline decoration-sun decoration-2"
+                          : "hover:bg-ink/5"
                       }`}
                     >
                       {item.label}

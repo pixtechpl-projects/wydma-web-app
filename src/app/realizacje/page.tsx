@@ -23,7 +23,7 @@ export default function ProjectsPage() {
       <JsonLd data={breadcrumbJsonLd(crumbs)} />
       <Breadcrumbs items={crumbs} />
       <header className="max-w-3xl">
-        <p className="text-xs font-semibold tracking-[0.16em] text-lagoon-deep uppercase">
+        <p className="text-xs font-semibold tracking-[0.16em] text-ink/50 uppercase">
           Nasze realizacje
         </p>
         <h1 className="mt-3 text-5xl leading-tight font-semibold text-ink sm:text-6xl">
@@ -32,16 +32,24 @@ export default function ProjectsPage() {
         <p className="mt-5 text-lg leading-8 text-ink/80">
           Tworzymy publikacje i materiały graficzne, które pomagają przekazywać
           informacje, prezentować działalność i docierać do odbiorców. Od gazet
-          i biuletynów, przez foldery promocyjne, po materiały reklamowe.
-          Dbamy o treść, formę i staranne przygotowanie każdego projektu.
+          i biuletynów, przez foldery promocyjne, po materiały reklamowe. Dbamy
+          o treść, formę i staranne przygotowanie każdego projektu.
         </p>
       </header>
 
       <div className="mt-14 space-y-16">
         {projectGroups.map((group) => (
-          <section key={group.id} id={group.id} aria-labelledby={`${group.id}-title`} className="scroll-mt-28">
+          <section
+            key={group.id}
+            id={group.id}
+            aria-labelledby={`${group.id}-title`}
+            className="scroll-mt-28"
+          >
             <div className="max-w-2xl">
-              <h2 id={`${group.id}-title`} className="text-4xl font-semibold text-ink">
+              <h2
+                id={`${group.id}-title`}
+                className="text-4xl font-semibold text-ink"
+              >
                 {group.title}
               </h2>
               <p className="mt-3 text-lg text-ink/75">{group.summary}</p>
@@ -49,10 +57,12 @@ export default function ProjectsPage() {
             <ul className="mt-6 grid max-w-3xl gap-6 md:grid-cols-2">
               {group.images.map((image) => (
                 <li key={image.src}>
-                  <figure className="overflow-hidden rounded-[1.8rem] border-2 border-ink bg-white shadow-[8px_8px_0_0_var(--sun)]">
+                  <figure className="overflow-hidden rounded-[1.8rem] border border-ink/10 bg-white">
                     <div
                       className={`relative ${
-                        image.width > image.height ? "aspect-[16/9]" : "aspect-[3/4]"
+                        image.width > image.height
+                          ? "aspect-[16/9]"
+                          : "aspect-[3/4]"
                       }`}
                     >
                       <Image
@@ -74,11 +84,11 @@ export default function ProjectsPage() {
         ))}
       </div>
 
-      <div className="mt-14 rounded-[2rem] border-2 border-ink bg-sun p-8">
+      <div className="mt-14 rounded-[2rem] border border-ink/10 bg-white p-8">
         <h2 className="text-3xl font-semibold text-ink">Masz podobny temat?</h2>
         <p className="mt-3 max-w-xl leading-7 text-ink/80">
-          Gazeta, biuletyn, folder albo materiał na wydarzenie. Napisz, na
-          jakim etapie jest projekt.
+          Gazeta, biuletyn, folder albo materiał na wydarzenie. Napisz, na jakim
+          etapie jest projekt.
         </p>
         <LinkButton href="/kontakt" className="mt-6">
           Napisz o realizacji

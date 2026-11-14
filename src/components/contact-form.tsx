@@ -50,9 +50,9 @@ export function ContactForm() {
     return (
       <div
         role="status"
-        className="rounded-[2rem] border-2 border-ink bg-white p-8 shadow-[8px_8px_0_0_var(--sun)]"
+        className="rounded-[2rem] border border-ink/10 bg-white p-8"
       >
-        <p className="text-xs font-semibold tracking-[0.16em] text-lagoon-deep uppercase">
+        <p className="text-xs font-semibold tracking-[0.16em] text-ink/50 uppercase">
           Wiadomość przyjęta
         </p>
         <h2 className="mt-3 font-heading text-4xl text-ink">Dziękujemy.</h2>
@@ -67,7 +67,7 @@ export function ContactForm() {
     <form
       noValidate
       onSubmit={handleSubmit(onSubmit)}
-      className="rounded-[2rem] border-2 border-ink bg-white p-6 shadow-[8px_8px_0_0_var(--coral)] sm:p-8"
+      className="rounded-[2rem] border border-ink/10 bg-white p-6 sm:p-8"
     >
       <FieldGroup>
         <Field
